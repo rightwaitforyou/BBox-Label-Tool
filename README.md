@@ -20,6 +20,57 @@ Dependency
 python 2.7 win 32bit
 PIL-1.1.7.win32-py2.7
 
+
+PIL The _imaging C module is not installed
+
+今天在WIN 7 64位用PIL的时候，提示 The _imaging C module is not installed ，原来是需要安装64位的。
+
+刚开始安装的是这个：http://www.pythonware.com/products/pil/  
+
+但如果是64位，需要安装这：
+
+
+Pillow-2.1.0.win-amd64-py2.7.‌exe 
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#pil
+ 
+
+在python后输入
+import ImageFont
+如果不出错就OK了。。
+
+在UBtunu下暂时还没遇到问题。 在公司的电脑也没遇到这问题。不过Google了发现很多人遇到这问题。记录一下
+
+ 
+
+ubtunu 安装PIL ： 可用如下
+
+sudo apt-get install python-imagingPIL The _imaging C module is not installed
+
+今天在WIN 7 64位用PIL的时候，提示 The _imaging C module is not installed ，原来是需要安装64位的。
+
+刚开始安装的是这个：http://www.pythonware.com/products/pil/  
+
+但如果是64位，需要安装这：
+
+
+Pillow-2.1.0.win-amd64-py2.7.‌exe 
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#pil
+ 
+
+在python后输入
+import ImageFont
+如果不出错就OK了。。
+
+在UBtunu下暂时还没遇到问题。 在公司的电脑也没遇到这问题。不过Google了发现很多人遇到这问题。记录一下
+
+ 
+
+ubtunu 安装PIL ： 可用如下
+
+sudo apt-get install python-imaging
+
 Startup
 -------
 $ python main.py
